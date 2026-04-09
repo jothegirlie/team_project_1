@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+    
+    header{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+
+}
+
+.container{
+ display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding:1rem;
+
+}
+
+.container > a > img{
+width:100px;
+height:auto;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    flex-direction: row;
+    width:35%;
+}
+
+nav > a {
+     font-family: "Roboto", sans-serif;
+     font-size: 18px;
+     color:#F9FAF8;
+     font-weight: 300;
+     cursor: pointer;
+     text-decoration: none;
+     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav > a:hover{
+    border-bottom: 2px solid #F9FAF8
+}
+
+main{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    gap:5%;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1F2937;
+    padding:5rem 2rem;
+
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:30%;
+}
+.hero-content > h1{
+    font-family: "Roboto", sans-serif;
+     font-size: 48px;
+     color:#F9FAF8;
+     font-weight: 800;
+     margin:0;
+}
+
+.hero-content > p {
+font-family: "Roboto", sans-serif;
+     font-size: 18px;
+     color:#F9FAF8;
+font-weight: 300;
+}
+
+.hero-content > button {
+    font-family: "Roboto", sans-serif;
+    color:white;
+    background-color: #3882F6;
+    padding:10px 30px;
+    border:none;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.hero-content > button:hover{
+    background-color: white;
+    color:#3882F6;
+     transform: translateY(-2px);
+}
+
+.hero-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:40%;
+}
+
+.hero-img > img {
+    width:100%;
+    height:auto;
+}
+
+.info{
+ display: flex;
+    width:100%;
+    justify-content: center;
+    gap:30px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9FAF8;
+    padding:5rem;
+
+
+}
+
+.info > h2{
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
+    font-family: "Roboto", sans-serif;
+}
+
+.info-divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    flex-direction: row;
+}
+
+.steps{
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.steps > img{
+      border: 4px solid #3882F6;
+    border-radius: 10px;
+    width:180px;
+    height:180px;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.steps > img:hover {
+    transform: scale(1.1);
+     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.steps > p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+    color:#1F2937
+}
+
+.review{
+
+ display: flex;
+    width:100%;
+    justify-content: center;
+    gap:30px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding:2rem;
+
+}
+
+.review-div{
+width:70%;
+}
+
+.quote {
+    font-family: "Roboto", sans-serif;
+font-size: 36px;
+color:#1F2937;
+font-weight: 300;
+font-style: italic;
+text-align: left;
+}
+
+.quote-author{
+    font-family: "Roboto", sans-serif;
+    text-align: right;
+    font-weight: 800;
+    font-size: 15px;
+    color:#1F2937;
+}
+
+
+.sign-up{
+ display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FAF8;
+    padding:5rem;
+
+
+}
+
+
+.sign-up-div{
+    background-color: #3882F6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width:60%;
+    padding: 2rem;
+    font-family: "Roboto", sans-serif;
+    color:#e5e7eb
+}
+
+
+.sign-up-text > p{
+    font-family: "Roboto", sans-serif;
+    color:#e5e7eb;
+    font-weight: 300;
+    font-size:14px;
+    margin:0;
+}
+
+.sign-up-text{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sign-up-text > h3{
+    margin: 0;
+}
+
+.sign-up-div button {
+     font-family: "Roboto", sans-serif;
+    color: #F9FAF8;
+    background-color: #3882F6;
+    padding:10px 30px 10px 30px;
+    border:2px solid #F9FAF8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+.sign-up-div button:hover{
+    color:#3882F6;
+    background-color: #F9FAF8;
+transform: translateY(-2px);
+}
+
+footer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+}
+
+footer > p{
+     font-family: "Roboto", sans-serif;
+    color: #F9FAF8;
+    font-weight: 300;
+    font-size: 15px;
+    padding:1rem;
+}
+
+
+
+@media (max-width:1000px){
+   .container{
+        width: 90%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+     nav{
+        width: 100%;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .hero{
+        flex-direction: column;
+        gap:2rem;
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+    .hero-content{
+        width:60%;
+        text-align: center;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .hero-img{
+        width:60%;
+    }
+
+    .info-divs{
+        flex-wrap: wrap;
+        width:100%;  
+        gap:1rem;
+    }
+
+    .sign-up-div{
+        width: 100%;
+        gap:1rem;
+    }
+
+}
+
+
+
+@media (max-width:500px){
+    .container > h1{
+        font-size: 20px;
+    }
+
+    nav > a{
+        font-size: 16px;
+    }
+
+    .hero-content > h1{
+        font-size: 36px;
+    }
+   
+    .hero-content > p{
+        font-size: 16px;
+    }
+
+    .info > h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .quote{
+        font-size: 22px;
+    }
+
+    .steps{
+        width: 100%;
+        max-width: 200px;
+       
+    }
+
+    .sign-up-div{
+        width:100%;
+        padding: 1.5rem;
+        
+    }
+
+
+    .info-divs{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    
+
+    
+}
+
+
+
