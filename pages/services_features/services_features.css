@@ -202,4 +202,8 @@ footer > p{
         gap: 1.5rem;
         flex-wrap: wrap;
     }
+
+    .title {
+        text-align: center;
+    }
 }
