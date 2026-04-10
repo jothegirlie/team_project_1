@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #F9FAF8;
+  background-image: url('/images/w4.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+main{
+    margin:2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+    width:50%;
+    padding: 1rem;
+      background: rgba(249, 250, 248, 0.4); 
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+#picture{
+    border-radius: 1rem;
+    opacity: 0.9;
+}
+
+.sign-up-form{
+    display: flex;
+    width:90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav{
+    display: flex;
+    width:90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a{
+      font-family: "Roboto", sans-serif;
+      color:#1F2937;
+      padding:0.8rem;
+      border:1px solid #1F2937;
+      border-radius: 50%;
+      transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+nav > a:hover{
+background-color: #1F2937;
+color:#F9FAF8;
+  transform: translateX(-4px);
+}
+
+
+nav > p{
+       font-family: "Roboto", sans-serif;
+       color:#1F2937;
+}
+
+nav span {
+     font-family: "Roboto", sans-serif;
+     color:#1F2937;
+     text-decoration: underline;
+     font-weight: 800;
+     cursor: pointer;
+     transition: color 0.4s ease-in;
+}
+
+nav span:hover{
+    color:#3882F6
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:90%;
+    margin-top:4rem;
+}
+
+#p-link {
+      font-family: "Roboto", sans-serif;
+      color:#1F2937;
+      margin: 0;
+      font-size: 0.9rem;
+}
+
+#p-link > span{
+    color:#3882F6;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 800;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#p-link >span:hover{
+border-bottom: 2px solid #3882F6;
+}
+
+.form-content > h1{
+    font-family: "Roboto", sans-serif;
+       color:#1F2937;
+       font-size:3rem;
+       margin:0;
+}
+
+.form-content > p{
+     font-family: "Roboto", sans-serif;
+       color:#1F2937;
+}
+
+.form-content h3{
+    font-family: "Roboto", sans-serif;
+    color: #1F2937;
+}
+
+.memberships{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.membership{
+padding: 2rem;
+width: 30%;
+border-radius: 1rem;
+background-color: transparent;
+border: 2px solid #1F2937;
+font-family: "Roboto", sans-serif;
+color:rgba(148, 148, 148, 0.564);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+cursor:pointer;
+ transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+}
+
+.membership:hover{
+   background-color: rgb(148, 148, 148);
+   color:#F9FAF8; 
+  transform: translateX(-4px);
+}
+
+.membership:focus{
+     background-color: #1F2937;
+   color:#F9FAF8;
+}
+
+form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:1rem;
+}
+
+form input{
+    border:none;
+    font-family: "Roboto", sans-serif;
+    color:#1F2937;
+     background-color: transparent;
+    border-bottom: 2px solid #1F2937;
+    padding: 1.5rem;
+     padding-left: 2.5rem;
+    width:100%;
+}
+
+input::placeholder{
+    color:#1F2937; 
+}
+
+input:focus{
+  outline: none;
+  border:2px solid  #1F2937;
+  border-radius: 1rem;
+}
+
+.input-with-icon{
+  width:100%;
+  position: relative;
+}
+.input-with-icon> i{
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#1F2937;
+}
+
+.sign-up-choices{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up-choices > img{
+    width:3rem;
+    height:3rem;
+    padding:0.4rem;
+    border:2px solid #1F2937;
+    border-radius: 50%;
+    object-fit: contain;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    background-color: #F9FAF8;
+}
+
+.sign-up-choices > img:hover{
+border-color: #3882F6;
+transform: translateY(-2px);
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.sign-up-choices > button{
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.sign-up-choices > p{
+      font-family: "Roboto", sans-serif;
+      color:#1F2937;
+}
+
+.signup-btn {
+  display: inline-flex;
+  align-items: center;
+ padding: 1rem;
+  width: 15rem;
+  border:none;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color:#F9FAF8;
+  font-size: 1rem;
+   transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.signup-btn > i{
+    padding:0.8rem;
+    background-color:#f9faf828;
+      border-radius: 50%;
+}
+
+.signup-btn:hover{
+background-color: #3882F6;
+  transform: translateY(-2px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*Responsive max-width: 1100px:*/
+
+@media(max-width:1100px){
+main{ 
+   width:60%;
+
+}
+
+#picture{
+    width:15rem;
+    height:15rem;
+}
+
+.signup-btn{
+width:10rem;
+font-size: 1rem;
+}
+
+.sign-up-form{
+    width:100%;
+}
+
+
+}
+
+/*Responsive max-width: 700px:*/
+
+@media(max-width:700px){
+
+main{
+width:80%;
+}
+
+.sign-up-form{
+    width: 100%;
+}
+
+.form-content > h1{
+    font-size: 2rem;
+}
+
+.form-content > p{
+    font-size:0.8rem;
+}
+
+.signup-btn{
+width:10rem;
+font-size: 1rem;
+}
+
+
+
+}

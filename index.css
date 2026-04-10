@@ -51,11 +51,16 @@ nav > a {
      cursor: pointer;
      text-decoration: none;
      border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+    transition: border-color 0.3s ease, color 0.3s ease ,border-bottom 0.3s ease;
 }
 
 nav > a:hover{
     border-bottom: 2px solid #F9FAF8
+}
+
+nav> a:active{
+    color:#3882F6;
+  border:none;
 }
 
 main{
@@ -98,7 +103,7 @@ font-family: "Roboto", sans-serif;
 font-weight: 300;
 }
 
-.hero-content > button {
+.hero-content > a > button {
     font-family: "Roboto", sans-serif;
     color:white;
     background-color: #3882F6;
@@ -109,7 +114,7 @@ font-weight: 300;
     cursor: pointer;
 }
 
-.hero-content > button:hover{
+.hero-content > a > button:hover{
     background-color: white;
     color:#3882F6;
      transform: translateY(-2px);
@@ -151,7 +156,7 @@ font-weight: 300;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:70%;
+    width:80%;
     flex-direction: row;
 }
 
@@ -265,7 +270,7 @@ text-align: left;
     margin: 0;
 }
 
-.sign-up-div button {
+.sign-up-div a > button {
      font-family: "Roboto", sans-serif;
     color: #F9FAF8;
     background-color: #3882F6;
@@ -275,7 +280,7 @@ text-align: left;
     cursor: pointer;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
 }
-.sign-up-div button:hover{
+.sign-up-div >a > button:hover{
     color:#3882F6;
     background-color: #F9FAF8;
 transform: translateY(-2px);
@@ -299,7 +304,7 @@ footer > p{
 
 
 
-@media (max-width:1000px){
+@media (max-width:1100px){
    .container{
         width: 90%;
         flex-direction: column;
