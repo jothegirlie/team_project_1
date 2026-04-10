@@ -7,9 +7,10 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #F9FAF8;
-  background-image: url('/images/w4.jpg');
+  background-image: url('/images/wallpaper.jpg');
   background-size: cover;
   background-position: center;
+  font-family: "Roboto", sans-serif;
 
 }
 
@@ -20,12 +21,12 @@ main{
     align-items: center;
     justify-content: center;
     gap:4rem;
-    width:50%;
+    width:90%;
+    max-width: 600px;
     padding: 1rem;
-      background: rgba(249, 250, 248, 0.4); 
-  backdrop-filter: blur(8px);
-  border-radius: 8px;
-  padding: 2rem;
+    background: rgba(249, 250, 248, 0.4); 
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
 }
 
 #picture{
@@ -51,29 +52,26 @@ nav{
 }
 
 nav > a{
-      font-family: "Roboto", sans-serif;
       color:#1F2937;
       padding:0.8rem;
       border:1px solid #1F2937;
       border-radius: 50%;
       transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
+      cursor: pointer;
 }
 
 nav > a:hover{
-background-color: #1F2937;
-color:#F9FAF8;
-  transform: translateX(-4px);
+    background-color: #1F2937;
+    color:#F9FAF8;
+    transform: translateX(-4px);
 }
 
 
 nav > p{
-       font-family: "Roboto", sans-serif;
-       color:#1F2937;
+    color:#1F2937;
 }
 
 nav span {
-     font-family: "Roboto", sans-serif;
      color:#1F2937;
      text-decoration: underline;
      font-weight: 800;
@@ -94,7 +92,6 @@ nav span:hover{
 }
 
 #p-link {
-      font-family: "Roboto", sans-serif;
       color:#1F2937;
       margin: 0;
       font-size: 0.9rem;
@@ -110,24 +107,17 @@ nav span:hover{
 }
 
 #p-link >span:hover{
-border-bottom: 2px solid #3882F6;
+    border-bottom: 2px solid #3882F6;
 }
 
 .form-content > h1{
-    font-family: "Roboto", sans-serif;
-       color:#1F2937;
-       font-size:3rem;
-       margin:0;
+    color:#1F2937;
+    font-size:3rem;
+    margin:0;
 }
 
-.form-content > p{
-     font-family: "Roboto", sans-serif;
+.form-content > p, .form-content h3, .sign-up-choices > p{
        color:#1F2937;
-}
-
-.form-content h3{
-    font-family: "Roboto", sans-serif;
-    color: #1F2937;
 }
 
 .memberships{
@@ -139,27 +129,26 @@ border-bottom: 2px solid #3882F6;
 }
 
 .membership{
-padding: 2rem;
-width: 30%;
-border-radius: 1rem;
-background-color: transparent;
-border: 2px solid #1F2937;
-font-family: "Roboto", sans-serif;
-color:rgba(148, 148, 148, 0.564);
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-cursor:pointer;
- transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    padding: 2rem;
+    width: 30%;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid #1F2937;
+    color:rgba(148, 148, 148, 0.564);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor:pointer;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
 }
 
 .membership:hover{
    background-color: rgb(148, 148, 148);
    color:#F9FAF8; 
-  transform: translateX(-4px);
+   transform: translateX(-4px);
 }
 
 .membership:focus{
-     background-color: #1F2937;
-   color:#F9FAF8;
+    background-color: #1F2937;
+    color:#F9FAF8;
 }
 
 form{
@@ -172,12 +161,11 @@ form{
 
 form input{
     border:none;
-    font-family: "Roboto", sans-serif;
     color:#1F2937;
-     background-color: transparent;
+    background-color: transparent;
     border-bottom: 2px solid #1F2937;
     padding: 1.5rem;
-     padding-left: 2.5rem;
+    padding-left: 2.5rem;
     width:100%;
 }
 
@@ -186,8 +174,8 @@ input::placeholder{
 }
 
 input:focus{
-  outline: none;
-  border:2px solid  #1F2937;
+  outline: 1px solid #1F2937;
+  border:1px solid  #1F2937;
   border-radius: 1rem;
 }
 
@@ -224,9 +212,9 @@ input:focus{
 }
 
 .sign-up-choices > img:hover{
-border-color: #3882F6;
-transform: translateY(-2px);
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-color: #3882F6;
+    transform: translateY(-2px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .sign-up-choices > button{
@@ -234,45 +222,38 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     color: #F9FAF8;
 }
 
-.sign-up-choices > p{
-      font-family: "Roboto", sans-serif;
-      color:#1F2937;
-}
-
 .signup-btn {
-  display: inline-flex;
-  align-items: center;
- padding: 1rem;
-  width: 15rem;
-  border:none;
-  border-radius: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  color:#F9FAF8;
-  font-size: 1rem;
-   transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
+    align-items: center;
+    padding: 1rem;
+    width: 15rem;
+    border:none;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color:#F9FAF8;
+    font-size: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
 }
 
 .signup-btn > i{
     padding:0.8rem;
     background-color:#f9faf828;
-      border-radius: 50%;
+    border-radius: 50%;
 }
 
 .signup-btn:hover{
-background-color: #3882F6;
-  transform: translateY(-2px);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #3882F6;
+    transform: translateY(-2px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 
 /*Responsive max-width: 1100px:*/
 
 @media(max-width:1100px){
 main{ 
    width:60%;
-
 }
 
 #picture{
@@ -281,15 +262,13 @@ main{
 }
 
 .signup-btn{
-width:10rem;
-font-size: 1rem;
+    width:10rem;
+    font-size: 1rem;
 }
 
 .sign-up-form{
     width:100%;
 }
-
-
 }
 
 /*Responsive max-width: 700px:*/
@@ -297,7 +276,7 @@ font-size: 1rem;
 @media(max-width:700px){
 
 main{
-width:80%;
+    width:85%;
 }
 
 .sign-up-form{
@@ -313,10 +292,7 @@ width:80%;
 }
 
 .signup-btn{
-width:10rem;
-font-size: 1rem;
+    width:10rem;
+    font-size: 1rem;
 }
-
-
-
 }
