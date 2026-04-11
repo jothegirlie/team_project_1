@@ -8,11 +8,6 @@ body {
   margin: 0;
 }
 
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
 
 h3 {
   margin: 0;
@@ -38,20 +33,55 @@ footer,
   padding: 0 0.5rem;
 }
 
-.about-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1em;
+header{
+    width:100%;
+    background-color: #1F2937;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.logo {
-  background-color: #e5e7eb;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 50px;
-  height: 50px;
+.about-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding:1rem;
+}
+
+.about-header > a > img{
+    width:100px;
+    height:auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    flex-direction: row;
+    width:35%;
+}
+
+nav > a {
+    font-size: 18px;
+    color:#F9FAF8;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.4s ease;
+}
+
+nav > a:hover{
+    border-bottom: 2px solid #F9FAF8;
+    transform: translateY(-2px);
+}
+
+nav> a:active{
+    color:#3882F6;
+    border:none;
 }
 
 .about-mission,
@@ -194,7 +224,11 @@ footer,
 footer {
   padding: 1em;
   margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 @media (min-width: 768px) {
   .mission-statistics {
