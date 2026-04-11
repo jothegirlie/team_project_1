@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1f2937;
+  margin: 0;
+}
+
+
+h3 {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: unset;
+  margin-right: 0.5em;
+}
+
+header,
+footer,
+.about-mission {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0.5rem;
+}
+
+header{
+    width:100%;
+    background-color: #1F2937;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.about-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding:1rem;
+}
+
+.about-header > a > img{
+    width:100px;
+    height:auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:2rem;
+    flex-direction: row;
+    width:35%;
+}
+
+nav > a {
+    font-size: 18px;
+    color:#F9FAF8;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.4s ease;
+}
+
+nav > a:hover{
+    border-bottom: 2px solid #F9FAF8;
+    transform: translateY(-2px);
+}
+
+nav> a:active{
+    color:#3882F6;
+    border:none;
+}
+
+.about-mission,
+.about-team,
+.about-facilities {
+  padding: 1em;
+}
+
+.about-mission h3 {
+  font-size: 48px;
+}
+
+.about-mission img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hook-accent,
+.accent {
+  font-weight: bold;
+  color: #3882f6;
+}
+
+.accent {
+  font-size: 30px;
+  display: block;
+}
+
+.about-team {
+  background-color: #e5e7eb;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-container {
+  background-color: #e5e7eb;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 1em;
+}
+
+.facilities-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.8em;
+  grid-template-areas:
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5";
+  max-width: 600px;
+  margin: 1em 0;
+}
+
+.grid-item {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid-item > h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.grid-text {
+  padding: 1em;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.facilities-icon {
+  font-size: 30px;
+  color: #8e8f90;
+}
+
+.facilities-training {
+  margin-top: 1em;
+}
+
+.facilities-training ul {
+  padding: 0;
+  margin: 0;
+}
+
+.facilities-training ul li {
+  list-style-type: none;
+}
+
+.facilities-training i {
+  color: #3882f6;
+  margin-right: 0.5em;
+}
+
+.cta {
+  padding: 1em 0;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta button {
+  background-color: #3882f6;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  padding: 1em;
+  margin-top: 0.5em;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (min-width: 768px) {
+  .mission-statistics {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "box-1 box-2 box-3"
+      "box-4 box-4 box-5";
+  }
+}
+
+@media (min-width: 1024px) {
+  .facilities-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
