@@ -230,6 +230,11 @@ footer {
   align-items: center;
 }
 
+@media (max-width: 500px) {
+  nav > a {
+    font-size: 16px;
+  }
+}
 
 @media (min-width: 768px) {
   .mission-statistics {
@@ -254,5 +259,20 @@ footer {
   .facilities-container {
     flex-direction: row;
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1100px) {
+  .about-header {
+    width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
 }
