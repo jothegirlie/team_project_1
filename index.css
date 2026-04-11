@@ -141,7 +141,7 @@ header, main, .hero, .info,.steps, .review, .sign-up, footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:80%;
+    width:100%;
     flex-direction: row;
 }
 
@@ -164,8 +164,9 @@ header, main, .hero, .info,.steps, .review, .sign-up, footer{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.steps > p{
+.steps > figcaption{
     font-size: 18px;
+    margin-top: 15px;
     text-align: center;
     font-weight: 300;
     color:#1F2937
