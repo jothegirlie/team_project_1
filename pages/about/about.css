@@ -214,6 +214,11 @@ nav> a:active{
   border: 1px solid white;
   cursor: pointer;
   border-radius: 20px;
+  transition: transform ease-in-out 0.5s;
+}
+
+.cta button:hover {
+  transform: scale(1.1);
 }
 
 footer {
