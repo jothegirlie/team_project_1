@@ -97,8 +97,9 @@ nav span:hover{
       font-size: 0.9rem;
 }
 
-#p-link > span{
+#p-link > a{
     color:#3882F6;
+    text-decoration: none;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 800;
@@ -106,7 +107,7 @@ nav span:hover{
     transition: border-color 0.3s ease;
 }
 
-#p-link >span:hover{
+#p-link >a:hover{
     border-bottom: 2px solid #3882F6;
 }
 
